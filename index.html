@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Онлайн бібліотека з хімії</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Онлайн Бібліотека Хімії</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
+      font-family: 'Bookman Old Style', serif;
+      background-color: #ffffff;
+      color: #333;
     }
 
     header {
-      background-color: #00695c;
+      background-color: #0054EA;
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
 
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 40px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
-    .button-container {
+    .intro {
+      background-color: #f2f2f2;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #0054EA;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
+      padding: 30px 15px;
+      background-color: #ffffff;
     }
 
-    .section-button {
-      background-color: #e0e0e0;
-      border: none;
-      padding: 20px 40px;
-      font-size: 18px;
+    nav a {
+      display: block;
+      padding: 15px 25px;
+      background-color: #f2f2f2;
+      color: #0054EA;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
       border-radius: 8px;
-      cursor: pointer;
       transition: background-color 0.3s;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
-    .section-button:hover {
-      background-color: #d6d6d6;
+    nav a:hover {
+      background-color: #dce6f9;
     }
 
     footer {
-      margin-top: 60px;
+      background-color: #0054EA;
+      color: white;
       text-align: center;
-      font-size: 14px;
-      color: #777;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Онлайн бібліотека з хімії</h1>
+    <h1>Онлайн Бібліотека Хімії</h1>
   </header>
-  <main>
-    <div class="button-container">
-      <button class="section-button">Періодична таблиця</button>
-      <button class="section-button">Тести</button>
-      <button class="section-button">Таблиця pH</button>
-      <button class="section-button">Реакції</button>
-      <button class="section-button">Малювання</button>
-    </div>
-  </main>
+
+  <section class="intro">
+    <h2>Навчайся легко — доступно та безкоштовно</h2>
+    <p>
+      Цей ресурс створено для того, щоб кожен мав відкритий доступ до якісних навчальних матеріалів з хімії.
+      Тут ви знайдете:
+      <br><br>
+      📘 Періодичну систему елементів<br>
+      💧 Таблицю pH<br>
+      🧪 Готові хімічні реакції<br>
+      ✅ Тематичні тести<br>
+      🔬 Малювання структур молекул (у розробці)
+      <br><br>
+      <i>Цей сайт розробляється як навчальний проєкт студентки спеціальності «Середня освіта (Хімія)»<br>
+      Мета — зробити безкоштовний, простий та функціональний ресурс для вивчення хімії.</i>
+    </p>
+  </section>
+
+  <nav>
+    <a href="#">Періодична таблиця</a>
+    <a href="#">Тести</a>
+    <a href="#">Таблиця pH</a>
+    <a href="#">Реакції</a>
+    <a href="#">Малювання</a>
+  </nav>
+
   <footer>
-    &copy; 2025 Тягнирядно-Недоруб Софія. Навчальний проєкт
+    &copy; 2025 Онлайн Бібліотека Хімії | Створено з любов’ю до науки 💙
   </footer>
+
 </body>
 </html>
