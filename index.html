@@ -1,111 +1,79 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Онлайн Бібліотека Хімії</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Онлайн бібліотека з хімії</title>
   <style>
     body {
+      font-family: "Bookman Old Style", serif;
       margin: 0;
-      font-family: 'Bookman Old Style', serif;
+      padding: 0;
       background-color: #ffffff;
-      color: #333;
+      color: #000000;
     }
 
     header {
       background-color: #0054EA;
       color: white;
-      padding: 20px 0;
+      padding: 20px;
       text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    .intro {
-      background-color: #f2f2f2;
-      padding: 30px;
-      text-align: center;
-    }
-
-    .intro h2 {
-      color: #0054EA;
-      margin-bottom: 15px;
-    }
-
-    .intro p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
     }
 
     nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      padding: 30px 15px;
-      background-color: #ffffff;
+      flex-wrap: wrap;
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
     }
 
     nav a {
-      display: block;
-      padding: 15px 25px;
-      background-color: #f2f2f2;
-      color: #0054EA;
+      margin: 5px 10px;
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      color: #000000;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      font-size: 1.1em;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #dce6f9;
+      background-color: #d0d0d0;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .info-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .info-section h2 {
+      color: #0054EA;
     }
 
     footer {
-      background-color: #0054EA;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        width: 100%;
-      }
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Онлайн Бібліотека Хімії</h1>
+    <h1>Онлайн бібліотека з хімії</h1>
   </header>
-
-  <section class="intro">
-    <h2>Навчайся легко — доступно та безкоштовно</h2>
-    <p>
-      Цей ресурс створено для того, щоб кожен мав відкритий доступ до якісних навчальних матеріалів з хімії.
-      Тут ви знайдете:
-      <br><br>
-      📘 Періодичну систему елементів<br>
-      💧 Таблицю pH<br>
-      🧪 Готові хімічні реакції<br>
-      ✅ Тематичні тести<br>
-      🔬 Малювання структур молекул (у розробці)
-      <br><br>
-      <i>Цей сайт розробляється як навчальний проєкт студентки спеціальності «Середня освіта (Хімія)»<br>
-      Мета — зробити безкоштовний, простий та функціональний ресурс для вивчення хімії.</i>
-    </p>
-  </section>
 
   <nav>
     <a href="#">Періодична таблиця</a>
@@ -115,9 +83,21 @@
     <a href="#">Малювання</a>
   </nav>
 
-  <footer>
-    &copy; 2025 Онлайн Бібліотека Хімії | Створено з любов’ю до науки 💙
-  </footer>
+  <main>
+    <div class="info-section">
+      <h2>Ласкаво просимо!</h2>
+      <p>
+        Цей сайт створено як вільну навчальну платформу для школярів, студентів і всіх, хто цікавиться хімією.
+        Тут ви знайдете інтерактивну періодичну таблицю, тематичні тести, довідкові матеріали, можливість переглядати реакції та будувати молекули.
+      </p>
+      <p>
+        Мета ресурсу — зробити якісну освіту з хімії доступною, сучасною та цікавою. Ми прагнемо поєднати науку й зручність у одному додатку.
+      </p>
+    </div>
+  </main>
 
+  <footer>
+    &copy; 2025 Онлайн бібліотека з хімії | Створено з любов’ю до науки
+  </footer>
 </body>
 </html>
